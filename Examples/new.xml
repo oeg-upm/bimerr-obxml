@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OccupantBehavior ID="obXML" Version="1.3.3">
+   <Buildings>
+      <Building ID="HypertechLab" IfcGuid="16Y9ahzJ5DjhmNdLJbEHS9">
+         <Type>Office</Type>
+         <Address>Greece</Address>
+         <Spaces ID="Zone1" IfcGuid="1wyeFgulzFhhJwSLyhKQk2">
+            <Space ID="LabSmallOffice" IfcGuid="31gUPiJjz4Qvpt6sZCOGVe">
+               <Type>Office</Type>
+               <Systems>
+                  <Thermostat>
+                     <Type>Adjustable</Type>
+                  </Thermostat>
+               </Systems>
+               <OccupantID>Occupant_1</OccupantID>
+            </Space>
+            <Space ID="LabBigOffice" IfcGuid="31gUPiJjz4Qvpt6sZCOGVg">
+               <Type>Office</Type>
+               <Systems>
+                  <Thermostat>
+                     <Type>Adjustable</Type>
+                  </Thermostat>
+               </Systems>
+               <OccupantID>Occupant_2</OccupantID>
+            </Space>
+            <Space ID="LabChMOffice" IfcGuid="31gUPiJjz4Qvpt6sZCOGVk">
+               <Type>Office</Type>
+               <Systems>
+                  <Thermostat>
+                     <Type>Adjustable</Type>
+                  </Thermostat>
+               </Systems>
+               <OccupantID>Occupant_3</OccupantID>
+            </Space>
+         </Spaces>
+         <Spaces ID="Zone2" IfcGuid="1wyeFgulzFhhJwSLyhKQkT">
+            <Space ID="LabOpenSpace" IfcGuid="31gUPiJjz4Qvpt6sZCOGVi">
+               <Type>Office</Type>
+               <Systems>
+                  <Thermostat>
+                     <Type>Adjustable</Type>
+                  </Thermostat>
+               </Systems>
+               <OccupantID>Occupant_4</OccupantID>
+            </Space>
+         </Spaces>
+      </Building>
+   </Buildings>
+   <Occupants>
+      <Occupant ID="Occupant_1">
+         <BehaviorID>B_TC1</BehaviorID>
+      </Occupant>
+      <Occupant ID="Occupant_2">
+         <BehaviorID>B_TC1</BehaviorID>
+      </Occupant>
+      <Occupant ID="Occupant_3">
+         <BehaviorID>B_TC1</BehaviorID>
+      </Occupant>
+      <Occupant ID="Occupant_4">
+         <BehaviorID>B_TC2</BehaviorID>
+      </Occupant>
+   </Occupants>
+   <Behaviors>
+      <Behavior ID="B_TC1">
+         <Drivers>
+            <Environment>
+               <Parameter ID="TempChMOffice" Name="Room dry-bulb air temperature">
+                  <Type>RoomAirTemperature</Type>
+               </Parameter>
+            </Environment>
+         </Drivers>
+         <Needs>
+            <Physical>
+               <Thermal>
+                  <OtherComfortEnvelope>
+                     <ParameterRange>
+                        <ParameterID>TempChMOffice</ParameterID>
+                        <Min>24.19</Min>
+                        <Max>27.33</Max>
+                     </ParameterRange>
+                  </OtherComfortEnvelope>
+               </Thermal>
+            </Physical>
+         </Needs>
+         <Actions>
+            <Interaction>
+               <Type>SetToControlValue</Type>
+               <Formula>
+                  <Weibull1D>
+                     <CoefficientA>26.32</CoefficientA>
+                     <CoefficientB>5.18</CoefficientB>
+                     <CoefficientC>16.54</CoefficientC>
+                     <Parameter1ID>TempChMOffice</Parameter1ID>
+                  </Weibull1D>
+               </Formula>
+               <ControlValue>26.47</ControlValue>
+            </Interaction>
+         </Actions>
+         <Systems>
+            <Thermostats>
+               <ThermostatType>Adjustable</ThermostatType>
+            </Thermostats>
+         </Systems>
+      </Behavior>
+      <Behavior ID="B_TC2">
+         <Drivers>
+            <Environment>
+               <Parameter ID="TempOpenSpace" Name="Room dry-bulb air temperature">
+                  <Type>RoomAirTemperature</Type>
+               </Parameter>
+            </Environment>
+         </Drivers>
+         <Needs>
+            <Physical>
+               <Thermal>
+                  <OtherComfortEnvelope>
+                     <ParameterRange>
+                        <ParameterID>TempOpenSpace</ParameterID>
+                        <Min>23.83</Min>
+                        <Max>25.31</Max>
+                     </ParameterRange>
+                  </OtherComfortEnvelope>
+               </Thermal>
+            </Physical>
+         </Needs>
+         <Actions>
+            <Interaction>
+               <Type>SetToControlValue</Type>
+               <Formula>
+                  <Weibull1D>
+                     <CoefficientA>24.44</CoefficientA>
+                     <CoefficientB>4.92</CoefficientB>
+                     <CoefficientC>15.79</CoefficientC>
+                     <Parameter1ID>TempOpenSpace</Parameter1ID>
+                  </Weibull1D>
+               </Formula>
+               <ControlValue>24.64</ControlValue>
+            </Interaction>
+         </Actions>
+         <Systems>
+            <Thermostats>
+               <ThermostatType>Adjustable</ThermostatType>
+            </Thermostats>
+         </Systems>
+      </Behavior>
+   </Behaviors>
+</OccupantBehavior>

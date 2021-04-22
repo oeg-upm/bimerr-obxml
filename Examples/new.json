@@ -1,0 +1,242 @@
+{
+  "OccupantBehavior": {
+    "Behaviors": {
+      "Behavior": [
+        {
+          "Actions": {
+            "Interaction": {
+              "ControlValue": 26.47,
+              "Formula": {
+                "Coefficients": {
+                  "Coefficient": [
+                    {
+                      "ConcatName": "B_TC1-Weibull1D-CoefficientA",
+                      "Name": "CoefficientA",
+                      "Value": 26.32
+                    },
+                    {
+                      "ConcatName": "B_TC1-Weibull1D-CoefficientB",
+                      "Name": "CoefficientB",
+                      "Value": 5.18
+                    },
+                    {
+                      "ConcatName": "B_TC1-Weibull1D-CoefficientC",
+                      "Name": "CoefficientC",
+                      "Value": 16.54
+                    }
+                  ],
+                  "Parameter": {
+                    "ConcatName": "B_TC1-Weibull1D-Parameter1ID",
+                    "Name": "Parameter1ID",
+                    "Value": "TempChMOffice"
+                  }
+                },
+                "ConcatForm": "B_TC1-Weibull1D",
+                "Name": "Weibull1D"
+              },
+              "Type": "SetToControlValue",
+              "TypeConcat": "B_TC1-SetToControlValue"
+            }
+          },
+          "Concatenation": "16Y9ahzJ5DjhmNdLJbEHS9_1wyeFgulzFhhJwSLyhKQk2",
+          "Drivers": {
+            "Environment": {
+              "Parameter": {
+                "ID": "TempChMOffice",
+                "Name": "Room dry-bulb air temperature",
+                "Type": "RoomAirTemperature"
+              }
+            }
+          },
+          "ID": "B_TC1",
+          "Needs": {
+            "Physical": {
+              "Max": 27.33,
+              "Name": "Need",
+              "ParameterID": "TempChMOffice",
+              "ParameterRange": {
+                "Max": 27.33,
+                "Min": 24.19,
+                "ParameterID": "TempChMOffice"
+              },
+              "Type": "16Y9ahzJ5DjhmNdLJbEHS9_1wyeFgulzFhhJwSLyhKQk2-Need"
+            }
+          },
+          "Systems": {
+            "System": {
+              "Name": "Thermostat",
+              "Type": "Adjustable"
+            }
+          }
+        },
+        {
+          "Actions": {
+            "Interaction": {
+              "ControlValue": 24.64,
+              "Formula": {
+                "Coefficients": {
+                  "Coefficient": [
+                    {
+                      "ConcatName": "B_TC2-Weibull1D-CoefficientA",
+                      "Name": "CoefficientA",
+                      "Value": 24.44
+                    },
+                    {
+                      "ConcatName": "B_TC2-Weibull1D-CoefficientB",
+                      "Name": "CoefficientB",
+                      "Value": 4.92
+                    },
+                    {
+                      "ConcatName": "B_TC2-Weibull1D-CoefficientC",
+                      "Name": "CoefficientC",
+                      "Value": 15.79
+                    }
+                  ],
+                  "Parameter": {
+                    "ConcatName": "B_TC2-Weibull1D-Parameter1ID",
+                    "Name": "Parameter1ID",
+                    "Value": "TempOpenSpace"
+                  }
+                },
+                "ConcatForm": "B_TC2-Weibull1D",
+                "Name": "Weibull1D"
+              },
+              "Type": "SetToControlValue",
+              "TypeConcat": "B_TC2-SetToControlValue"
+            }
+          },
+          "Concatenation": "16Y9ahzJ5DjhmNdLJbEHS9_1wyeFgulzFhhJwSLyhKQkT",
+          "Drivers": {
+            "Environment": {
+              "Parameter": {
+                "ID": "TempOpenSpace",
+                "Name": "Room dry-bulb air temperature",
+                "Type": "RoomAirTemperature"
+              }
+            }
+          },
+          "ID": "B_TC2",
+          "Needs": {
+            "Physical": {
+              "Name": "ThermalNeed",
+              "ParameterRange": {
+                "Max": 25.31,
+                "Min": 23.83,
+                "ParameterID": "TempOpenSpace"
+              },
+              "Type": "16Y9ahzJ5DjhmNdLJbEHS9_1wyeFgulzFhhJwSLyhKQkT-ThermalNeed"
+            }
+          },
+          "Systems": {
+            "System": {
+              "Name": "Thermostat",
+              "Type": "Adjustable"
+            }
+          }
+        }
+      ]
+    },
+    "Buildings": {
+      "Building": {
+        "Address": "Greece",
+        "BuildingIfcGuid": "16Y9ahzJ5DjhmNdLJbEHS9",
+        "ID": "HypertechLab",
+        "Spaces": {
+          "Space": [
+            {
+              "ID": "LabSmallOffice",
+              "IfcConcatenation": "16Y9ahzJ5DjhmNdLJbEHS9_1wyeFgulzFhhJwSLyhKQk2_31gUPiJjz4Qvpt6sZCOGVe",
+              "IfcConcatenationZone": "16Y9ahzJ5DjhmNdLJbEHS9_1wyeFgulzFhhJwSLyhKQk2_Zone1",
+              "IfcGuid": "31gUPiJjz4Qvpt6sZCOGVe",
+              "OccupantID": "Occupant_1",
+              "SpacesID": "Zone1",
+              "SpacesIfcGuid": "1wyeFgulzFhhJwSLyhKQk2",
+              "Systems": {
+                "System": {
+                  "Concatenation": "16Y9ahzJ5DjhmNdLJbEHS9_1wyeFgulzFhhJwSLyhKQk2_31gUPiJjz4Qvpt6sZCOGVe-Thermostat",
+                  "Name": "Thermostat",
+                  "Type": "Adjustable"
+                }
+              },
+              "Type": "Office"
+            },
+            {
+              "ID": "LabBigOffice",
+              "IfcConcatenation": "16Y9ahzJ5DjhmNdLJbEHS9_1wyeFgulzFhhJwSLyhKQk2_31gUPiJjz4Qvpt6sZCOGVg",
+              "IfcConcatenationZone": "16Y9ahzJ5DjhmNdLJbEHS9_1wyeFgulzFhhJwSLyhKQk2_Zone1",
+              "IfcGuid": "31gUPiJjz4Qvpt6sZCOGVg",
+              "OccupantID": "Occupant_2",
+              "SpacesID": "Zone1",
+              "SpacesIfcGuid": "1wyeFgulzFhhJwSLyhKQk2",
+              "Systems": {
+                "System": {
+                  "Concatenation": "16Y9ahzJ5DjhmNdLJbEHS9_1wyeFgulzFhhJwSLyhKQk2_31gUPiJjz4Qvpt6sZCOGVg-Thermostat",
+                  "Name": "Thermostat",
+                  "Type": "Adjustable"
+                }
+              },
+              "Type": "Office"
+            },
+            {
+              "ID": "LabChMOffice",
+              "IfcConcatenation": "16Y9ahzJ5DjhmNdLJbEHS9_1wyeFgulzFhhJwSLyhKQk2_31gUPiJjz4Qvpt6sZCOGVk",
+              "IfcConcatenationZone": "16Y9ahzJ5DjhmNdLJbEHS9_1wyeFgulzFhhJwSLyhKQk2_Zone1",
+              "IfcGuid": "31gUPiJjz4Qvpt6sZCOGVk",
+              "OccupantID": "Occupant_3",
+              "SpacesID": "Zone1",
+              "SpacesIfcGuid": "1wyeFgulzFhhJwSLyhKQk2",
+              "Systems": {
+                "System": {
+                  "Concatenation": "16Y9ahzJ5DjhmNdLJbEHS9_1wyeFgulzFhhJwSLyhKQk2_31gUPiJjz4Qvpt6sZCOGVk-Thermostat",
+                  "Name": "Thermostat",
+                  "Type": "Adjustable"
+                }
+              },
+              "Type": "Office"
+            },
+            {
+              "ID": "LabOpenSpace",
+              "IfcConcatenation": "16Y9ahzJ5DjhmNdLJbEHS9_1wyeFgulzFhhJwSLyhKQkT_31gUPiJjz4Qvpt6sZCOGVi",
+              "IfcConcatenationZone": "16Y9ahzJ5DjhmNdLJbEHS9_1wyeFgulzFhhJwSLyhKQkT_Zone2",
+              "IfcGuid": "31gUPiJjz4Qvpt6sZCOGVi",
+              "OccupantID": "Occupant_4",
+              "SpacesID": "Zone2",
+              "SpacesIfcGuid": "1wyeFgulzFhhJwSLyhKQkT",
+              "Systems": {
+                "System": {
+                  "Concatenation": "16Y9ahzJ5DjhmNdLJbEHS9_1wyeFgulzFhhJwSLyhKQkT_31gUPiJjz4Qvpt6sZCOGVi-Thermostat",
+                  "Name": "Thermostat",
+                  "Type": "Adjustable"
+                }
+              },
+              "Type": "Office"
+            }
+          ]
+        },
+        "Type": "Office"
+      }
+    },
+    "ID": "obXML",
+    "Occupants": {
+      "Occupant": [
+        {
+          "BehaviorID": "B_TC1",
+          "ID": "Occupant_1"
+        },
+        {
+          "BehaviorID": "B_TC1",
+          "ID": "Occupant_2"
+        },
+        {
+          "BehaviorID": "B_TC1",
+          "ID": "Occupant_3"
+        },
+        {
+          "BehaviorID": "B_TC2",
+          "ID": "Occupant_4"
+        }
+      ]
+    },
+    "Version": "1.3.3"
+  }
+}
