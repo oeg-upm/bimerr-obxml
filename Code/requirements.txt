@@ -1,0 +1,2 @@
+yattag==1.14.0
+inflection==0.5.0
