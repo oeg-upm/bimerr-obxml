@@ -1,0 +1,70 @@
+{
+    "datasources": [
+      {
+        "id": "OccupantBehavior Datasource",
+        "handler": {
+          "type": "JsonHandler",
+          "iterator": "$.OccupantBehavior"
+        },
+        "provider": {
+          "type": "FileProvider",
+          "file": "Data/out.json"
+        }
+      },
+      {
+        "id": "OccupantBehavior Spaces",
+        "handler": {
+          "type": "JsonHandler",
+          "iterator": "$.OccupantBehavior.Buildings.Building.Spaces.Space[*]"
+        },
+        "provider": {
+          "type": "FileProvider",
+          "file": "Data/out.json"
+        }
+      },
+      {
+        "id": "OccupantBehavior Occupant",
+        "handler": {
+          "type": "JsonHandler",
+          "iterator": "$.OccupantBehavior.Occupants.Occupant[*]"
+        },
+        "provider": {
+          "type": "FileProvider",
+          "file": "Data/out.json"
+        }
+      },
+      {
+        "id": "OccupantBehavior Behaviors",
+        "handler": {
+          "type": "JsonHandler",
+          "iterator": "$.OccupantBehavior.Behaviors.Behavior[*]"
+        },
+        "provider": {
+          "type": "FileProvider",
+          "file": "Data/out.json"
+        }
+      },
+      {
+        "id": "OccupantBehavior Formula",
+        "handler": {
+          "type": "JsonHandler",
+          "iterator": "$.OccupantBehavior.Behaviors.Behavior[*].Actions.Interaction.Formula"
+        },
+        "provider": {
+          "type": "FileProvider",
+          "file": "Data/out.json"
+        }
+      },
+      {
+        "id": "OccupantBehavior Coefficients",
+        "handler": {
+          "type": "JsonHandler",
+          "iterator": "$.OccupantBehavior.Behaviors.Behavior[*].Actions.Interaction.Formula.Coefficients.Coefficient[*]"
+        },
+        "provider": {
+          "type": "FileProvider",
+          "file": "Data/out.json"
+        }
+      }
+    ]
+  }
