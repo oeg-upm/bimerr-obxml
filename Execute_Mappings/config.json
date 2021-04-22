@@ -1,0 +1,7 @@
+{
+	"threads"  : {
+		"injecting_data" : 100,
+		"splitting_data" : 100,
+		"linking_data" : 100
+	}
+}
