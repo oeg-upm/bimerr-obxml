@@ -308,7 +308,7 @@
       "datasource_ids": [
         "OccupantBehavior Behaviors"
       ],
-      "subject": "https://bimerr.iot.linkeddata.es/def/occupancy-profile#{$.Needs.Physical.Type}",
+      "subject": "https://data.bimerr.iot.linkeddata.es/resource/#{$.Needs.Physical.Type}",
       "properties": [
         {
           "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
