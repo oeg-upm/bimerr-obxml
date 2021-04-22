@@ -1,0 +1,240 @@
+@base          <http://helio.linkeddata.es/> .
+<https://bimerr.iot.linkeddata.es/def/occupancy-profile#16Y9ahzJ5DjhmNdLJbEHS9_1wyeFgulzFhhJwSLyhKQk2-Need>
+        a       <https://bimerr.iot.linkeddata.es/def/occupancy-profile#Need> ;
+        <https://bimerr.iot.linkeddata.es/def/occupancy-profile#definedByRange>
+                <https://data.bimerr.iot.linkeddata.es/resource/#16Y9ahzJ5DjhmNdLJbEHS9_1wyeFgulzFhhJwSLyhKQk2-Need-ParameterRange> .
+
+<https://data.bimerr.iot.linkeddata.es/resource/B_TC1-Weibull1D-CoefficientC>
+        a       <https://bimerr.iot.linkeddata.es/def/occupancy-profile#Coefficient> ;
+        <https://bimerr.iot.linkeddata.es/def/occupancy-profile#coefficientValue>
+                "16.54"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <https://bimerr.iot.linkeddata.es/def/occupancy-profile#name>
+                "CoefficientC"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<https://data.bimerr.iot.linkeddata.es/resource/Occupant_4>
+        a       <https://bimerr.iot.linkeddata.es/def/occupancy-profile#Occupant> ;
+        <https://bimerr.iot.linkeddata.es/def/occupancy-profile#hasBehavior>
+                <https://data.bimerr.iot.linkeddata.es/resource/B_TC2> .
+
+<https://data.bimerr.iot.linkeddata.es/resource/#16Y9ahzJ5DjhmNdLJbEHS9_1wyeFgulzFhhJwSLyhKQk2-Need-ParameterRange>
+        a       <https://bimerr.iot.linkeddata.es/def/occupancy-profile#ParameterRange> ;
+        <https://bimerr.iot.linkeddata.es/def/occupancy-profile#maxRangeValue>
+                "27.33"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <https://bimerr.iot.linkeddata.es/def/occupancy-profile#minRangeValue>
+                "24.19"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<https://data.bimerr.iot.linkeddata.es/resource/Interaction-B_TC2-SetToControlValue>
+        a       <https://bimerr.iot.linkeddata.es/def/occupancy-profile#Interaction> ;
+        <https://bimerr.iot.linkeddata.es/def/occupancy-profile#controlValue>
+                "24.64"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <https://bimerr.iot.linkeddata.es/def/occupancy-profile#describedByFormula>
+                <https://data.bimerr.iot.linkeddata.es/resource/B_TC2-Weibull1D> ;
+        <https://bimerr.iot.linkeddata.es/def/occupancy-profile#interactionType>
+                <https://bimerr.iot.linkeddata.es/def/occupancy-profile#SetToControlValue> ;
+        <https://bimerr.iot.linkeddata.es/def/occupancy-profile#interactsOver>
+                <https://data.bimerr.iot.linkeddata.es/resource/16Y9ahzJ5DjhmNdLJbEHS9_1wyeFgulzFhhJwSLyhKQkT> .
+
+<https://data.bimerr.iot.linkeddata.es/resource/B_TC1-DriverSet>
+        a       <https://bimerr.iot.linkeddata.es/def/occupancy-profile#DriverSet> ;
+        <https://bimerr.iot.linkeddata.es/def/occupancy-profile#composedOf>
+                <https://data.bimerr.iot.linkeddata.es/resource/B_TC1-Environment> .
+
+<https://data.bimerr.iot.linkeddata.es/resource/B_TC1-Weibull1D-CoefficientB>
+        a       <https://bimerr.iot.linkeddata.es/def/occupancy-profile#Coefficient> ;
+        <https://bimerr.iot.linkeddata.es/def/occupancy-profile#coefficientValue>
+                "5.18"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <https://bimerr.iot.linkeddata.es/def/occupancy-profile#name>
+                "CoefficientB"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<https://data.bimerr.iot.linkeddata.es/resource/16Y9ahzJ5DjhmNdLJbEHS9_1wyeFgulzFhhJwSLyhKQk2_31gUPiJjz4Qvpt6sZCOGVg>
+        a       <https://bimerr.iot.linkeddata.es/def/building#BuildingSpace> ;
+        <https://bimerr.iot.linkeddata.es/def/building#hasOccupant>
+                <https://data.bimerr.iot.linkeddata.es/resource/Occupant_2> ;
+        <https://w3id.org/def/saref4bldg#contains>
+                <https://data.bimerr.iot.linkeddata.es/resource/16Y9ahzJ5DjhmNdLJbEHS9_1wyeFgulzFhhJwSLyhKQk2_31gUPiJjz4Qvpt6sZCOGVg-Thermostat> .
+
+<https://data.bimerr.iot.linkeddata.es/resource/Occupant_3>
+        a       <https://bimerr.iot.linkeddata.es/def/occupancy-profile#Occupant> ;
+        <https://bimerr.iot.linkeddata.es/def/occupancy-profile#hasBehavior>
+                <https://data.bimerr.iot.linkeddata.es/resource/B_TC1> .
+
+<https://data.bimerr.iot.linkeddata.es/resource/#16Y9ahzJ5DjhmNdLJbEHS9_1wyeFgulzFhhJwSLyhKQkT-ThermalNeed-ParameterRange>
+        a       <https://bimerr.iot.linkeddata.es/def/occupancy-profile#ParameterRange> ;
+        <https://bimerr.iot.linkeddata.es/def/occupancy-profile#maxRangeValue>
+                "25.31"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <https://bimerr.iot.linkeddata.es/def/occupancy-profile#minRangeValue>
+                "23.83"^^<http://www.w3.org/2001/XMLSchema#float> .
+
+<https://data.bimerr.iot.linkeddata.es/resource/B_TC1-Weibull1D>
+        a       <https://bimerr.iot.linkeddata.es/def/occupancy-profile#WeibullFormula> ;
+        <https://bimerr.iot.linkeddata.es/def/occupancy-profile#hasCoefficient>
+                <https://data.bimerr.iot.linkeddata.es/resource/B_TC1-Weibull1D-CoefficientC> , <https://data.bimerr.iot.linkeddata.es/resource/B_TC1-Weibull1D-CoefficientA> , <https://data.bimerr.iot.linkeddata.es/resource/B_TC1-Weibull1D-CoefficientB> ;
+        <https://bimerr.iot.linkeddata.es/def/occupancy-profile#hasIndependentVariable>
+                <https://data.bimerr.iot.linkeddata.es/resource/B_TC1-Weibull1D-Parameter1ID> .
+
+<https://data.bimerr.iot.linkeddata.es/resource/B_TC2>
+        a       <https://bimerr.iot.linkeddata.es/def/occupancy-profile#Behavior> ;
+        <https://bimerr.iot.linkeddata.es/def/occupancy-profile#leadsTo>
+                <https://data.bimerr.iot.linkeddata.es/resource/B_TC2-SetToControlValue> .
+
+<https://data.bimerr.iot.linkeddata.es/resource/B_TC2-DriverSet>
+        a       <https://bimerr.iot.linkeddata.es/def/occupancy-profile#DriverSet> ;
+        <https://bimerr.iot.linkeddata.es/def/occupancy-profile#composedOf>
+                <https://data.bimerr.iot.linkeddata.es/resource/B_TC2-Environment> .
+
+<https://data.bimerr.iot.linkeddata.es/resource/Interaction-B_TC1-SetToControlValue>
+        a       <https://bimerr.iot.linkeddata.es/def/occupancy-profile#Interaction> ;
+        <https://bimerr.iot.linkeddata.es/def/occupancy-profile#controlValue>
+                "26.47"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <https://bimerr.iot.linkeddata.es/def/occupancy-profile#describedByFormula>
+                <https://data.bimerr.iot.linkeddata.es/resource/B_TC1-Weibull1D> ;
+        <https://bimerr.iot.linkeddata.es/def/occupancy-profile#interactionType>
+                <https://bimerr.iot.linkeddata.es/def/occupancy-profile#SetToControlValue> ;
+        <https://bimerr.iot.linkeddata.es/def/occupancy-profile#interactsOver>
+                <https://data.bimerr.iot.linkeddata.es/resource/16Y9ahzJ5DjhmNdLJbEHS9_1wyeFgulzFhhJwSLyhKQk2> .
+
+<https://data.bimerr.iot.linkeddata.es/resource/B_TC1-Weibull1D-CoefficientA>
+        a       <https://bimerr.iot.linkeddata.es/def/occupancy-profile#Coefficient> ;
+        <https://bimerr.iot.linkeddata.es/def/occupancy-profile#coefficientValue>
+                "26.32"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <https://bimerr.iot.linkeddata.es/def/occupancy-profile#name>
+                "CoefficientA"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<https://data.bimerr.iot.linkeddata.es/resource/16Y9ahzJ5DjhmNdLJbEHS9_1wyeFgulzFhhJwSLyhKQk2_31gUPiJjz4Qvpt6sZCOGVe-Thermostat>
+        a       <https://bimerr.iot.linkeddata.es/def/occupancy-profile#Thermostat> ;
+        <https://bimerr.iot.linkeddata.es/def/occupancy-profile#hasOperationalMode>
+                <https://bimerr.iot.linkeddata.es/def/occupancy-profile#Adjustable> .
+
+<https://data.bimerr.iot.linkeddata.es/resource/Occupant_2>
+        a       <https://bimerr.iot.linkeddata.es/def/occupancy-profile#Occupant> ;
+        <https://bimerr.iot.linkeddata.es/def/occupancy-profile#hasBehavior>
+                <https://data.bimerr.iot.linkeddata.es/resource/B_TC1> .
+
+<https://data.bimerr.iot.linkeddata.es/resource/B_TC2-Weibull1D>
+        a       <https://bimerr.iot.linkeddata.es/def/occupancy-profile#WeibullFormula> ;
+        <https://bimerr.iot.linkeddata.es/def/occupancy-profile#hasCoefficient>
+                <https://data.bimerr.iot.linkeddata.es/resource/B_TC2-Weibull1D-CoefficientA> , <https://data.bimerr.iot.linkeddata.es/resource/B_TC2-Weibull1D-CoefficientC> , <https://data.bimerr.iot.linkeddata.es/resource/B_TC2-Weibull1D-CoefficientB> ;
+        <https://bimerr.iot.linkeddata.es/def/occupancy-profile#hasIndependentVariable>
+                <https://data.bimerr.iot.linkeddata.es/resource/B_TC2-Weibull1D-Parameter1ID> .
+
+<https://data.bimerr.iot.linkeddata.es/resource/B_TC1-Weibull1D-Parameter1ID>
+        a       <https://bimerr.iot.linkeddata.es/def/occupancy-profile#EnvironmentalParameter> ;
+        <https://bimerr.iot.linkeddata.es/def/occupancy-profile#describesProperty>
+                <https://bimerr.iot.linkeddata.es/def/occupancy-profile#Temperature> ;
+        <https://bimerr.iot.linkeddata.es/def/occupancy-profile#name>
+                "Room dry-bulb air temperature"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<https://data.bimerr.iot.linkeddata.es/resource/B_TC2-Weibull1D-CoefficientC>
+        a       <https://bimerr.iot.linkeddata.es/def/occupancy-profile#Coefficient> ;
+        <https://bimerr.iot.linkeddata.es/def/occupancy-profile#coefficientValue>
+                "15.79"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <https://bimerr.iot.linkeddata.es/def/occupancy-profile#name>
+                "CoefficientC"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<https://data.bimerr.iot.linkeddata.es/resource/B_TC1>
+        a       <https://bimerr.iot.linkeddata.es/def/occupancy-profile#Behavior> ;
+        <https://bimerr.iot.linkeddata.es/def/occupancy-profile#leadsTo>
+                <https://data.bimerr.iot.linkeddata.es/resource/B_TC1-SetToControlValue> .
+
+<https://data.bimerr.iot.linkeddata.es/resource/16Y9ahzJ5DjhmNdLJbEHS9_1wyeFgulzFhhJwSLyhKQk2_31gUPiJjz4Qvpt6sZCOGVk>
+        a       <https://bimerr.iot.linkeddata.es/def/building#BuildingSpace> ;
+        <https://bimerr.iot.linkeddata.es/def/building#hasOccupant>
+                <https://data.bimerr.iot.linkeddata.es/resource/Occupant_3> ;
+        <https://w3id.org/def/saref4bldg#contains>
+                <https://data.bimerr.iot.linkeddata.es/resource/16Y9ahzJ5DjhmNdLJbEHS9_1wyeFgulzFhhJwSLyhKQk2_31gUPiJjz4Qvpt6sZCOGVk-Thermostat> .
+
+<https://bimerr.iot.linkeddata.es/def/occupancy-profile#16Y9ahzJ5DjhmNdLJbEHS9_1wyeFgulzFhhJwSLyhKQkT-ThermalNeed>
+        a       <https://bimerr.iot.linkeddata.es/def/occupancy-profile#ThermalNeed> ;
+        <https://bimerr.iot.linkeddata.es/def/occupancy-profile#definedByRange>
+                <https://data.bimerr.iot.linkeddata.es/resource/#16Y9ahzJ5DjhmNdLJbEHS9_1wyeFgulzFhhJwSLyhKQkT-ThermalNeed-ParameterRange> .
+
+<https://data.bimerr.iot.linkeddata.es/resource/16Y9ahzJ5DjhmNdLJbEHS9_1wyeFgulzFhhJwSLyhKQk2_31gUPiJjz4Qvpt6sZCOGVe>
+        a       <https://bimerr.iot.linkeddata.es/def/building#BuildingSpace> ;
+        <https://bimerr.iot.linkeddata.es/def/building#hasOccupant>
+                <https://data.bimerr.iot.linkeddata.es/resource/Occupant_1> ;
+        <https://w3id.org/def/saref4bldg#contains>
+                <https://data.bimerr.iot.linkeddata.es/resource/16Y9ahzJ5DjhmNdLJbEHS9_1wyeFgulzFhhJwSLyhKQk2_31gUPiJjz4Qvpt6sZCOGVe-Thermostat> .
+
+<https://data.bimerr.iot.linkeddata.es/resource/Occupant_1>
+        a       <https://bimerr.iot.linkeddata.es/def/occupancy-profile#Occupant> ;
+        <https://bimerr.iot.linkeddata.es/def/occupancy-profile#hasBehavior>
+                <https://data.bimerr.iot.linkeddata.es/resource/B_TC1> .
+
+<https://data.bimerr.iot.linkeddata.es/resource/16Y9ahzJ5DjhmNdLJbEHS9_1wyeFgulzFhhJwSLyhKQkT_31gUPiJjz4Qvpt6sZCOGVi-Thermostat>
+        a       <https://bimerr.iot.linkeddata.es/def/occupancy-profile#Thermostat> ;
+        <https://bimerr.iot.linkeddata.es/def/occupancy-profile#hasOperationalMode>
+                <https://bimerr.iot.linkeddata.es/def/occupancy-profile#Adjustable> .
+
+<https://bimerr.iot.linkeddata.es/def/occupancy-profile#Temperature>
+        a       <https://saref.etsi.org/core/Property> .
+
+<https://data.bimerr.iot.linkeddata.es/resource/B_TC2-Weibull1D-CoefficientB>
+        a       <https://bimerr.iot.linkeddata.es/def/occupancy-profile#Coefficient> ;
+        <https://bimerr.iot.linkeddata.es/def/occupancy-profile#coefficientValue>
+                "4.92"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <https://bimerr.iot.linkeddata.es/def/occupancy-profile#name>
+                "CoefficientB"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<https://data.bimerr.iot.linkeddata.es/resource/16Y9ahzJ5DjhmNdLJbEHS9>
+        a       <https://bimerr.iot.linkeddata.es/def/building#Building> ;
+        <https://bimerr.iot.linkeddata.es/def/building#hasApartment>
+                <https://data.bimerr.iot.linkeddata.es/resource/Zone2> , <https://data.bimerr.iot.linkeddata.es/resource/Zone1> ;
+        <https://w3id.org/def/saref4bldg#hasSpace>
+                <https://data.bimerr.iot.linkeddata.es/resource/16Y9ahzJ5DjhmNdLJbEHS9_1wyeFgulzFhhJwSLyhKQk2_31gUPiJjz4Qvpt6sZCOGVk> , <https://data.bimerr.iot.linkeddata.es/resource/16Y9ahzJ5DjhmNdLJbEHS9_1wyeFgulzFhhJwSLyhKQk2_31gUPiJjz4Qvpt6sZCOGVg> , <https://data.bimerr.iot.linkeddata.es/resource/16Y9ahzJ5DjhmNdLJbEHS9_1wyeFgulzFhhJwSLyhKQkT_31gUPiJjz4Qvpt6sZCOGVi> , <https://data.bimerr.iot.linkeddata.es/resource/16Y9ahzJ5DjhmNdLJbEHS9_1wyeFgulzFhhJwSLyhKQk2_31gUPiJjz4Qvpt6sZCOGVe> .
+
+<https://data.bimerr.iot.linkeddata.es/resource/16Y9ahzJ5DjhmNdLJbEHS9_1wyeFgulzFhhJwSLyhKQk2_Zone1>
+        a       <https://bimerr.iot.linkeddata.es/def/building#Apartment> ;
+        <https://bimerr.iot.linkeddata.es/def/building#hasSpace>
+                <https://data.bimerr.iot.linkeddata.es/resource/16Y9ahzJ5DjhmNdLJbEHS9_1wyeFgulzFhhJwSLyhKQk2_31gUPiJjz4Qvpt6sZCOGVk> , <https://data.bimerr.iot.linkeddata.es/resource/16Y9ahzJ5DjhmNdLJbEHS9_1wyeFgulzFhhJwSLyhKQk2_31gUPiJjz4Qvpt6sZCOGVg> , <https://data.bimerr.iot.linkeddata.es/resource/16Y9ahzJ5DjhmNdLJbEHS9_1wyeFgulzFhhJwSLyhKQk2_31gUPiJjz4Qvpt6sZCOGVe> .
+
+<https://data.bimerr.iot.linkeddata.es/resource/Interaction-SetToControlValue>
+        a       <https://bimerr.iot.linkeddata.es/def/occupancy-profile#InteractionConcept> .
+
+<https://data.bimerr.iot.linkeddata.es/resource/16Y9ahzJ5DjhmNdLJbEHS9_1wyeFgulzFhhJwSLyhKQkT_Zone2>
+        a       <https://bimerr.iot.linkeddata.es/def/building#Apartment> ;
+        <https://bimerr.iot.linkeddata.es/def/building#hasSpace>
+                <https://data.bimerr.iot.linkeddata.es/resource/16Y9ahzJ5DjhmNdLJbEHS9_1wyeFgulzFhhJwSLyhKQkT_31gUPiJjz4Qvpt6sZCOGVi> .
+
+<https://data.bimerr.iot.linkeddata.es/resource/16Y9ahzJ5DjhmNdLJbEHS9_1wyeFgulzFhhJwSLyhKQkT_31gUPiJjz4Qvpt6sZCOGVi>
+        a       <https://bimerr.iot.linkeddata.es/def/building#BuildingSpace> ;
+        <https://bimerr.iot.linkeddata.es/def/building#hasOccupant>
+                <https://data.bimerr.iot.linkeddata.es/resource/Occupant_4> ;
+        <https://w3id.org/def/saref4bldg#contains>
+                <https://data.bimerr.iot.linkeddata.es/resource/16Y9ahzJ5DjhmNdLJbEHS9_1wyeFgulzFhhJwSLyhKQkT_31gUPiJjz4Qvpt6sZCOGVi-Thermostat> .
+
+<https://data.bimerr.iot.linkeddata.es/resource/16Y9ahzJ5DjhmNdLJbEHS9_1wyeFgulzFhhJwSLyhKQk2_31gUPiJjz4Qvpt6sZCOGVg-Thermostat>
+        a       <https://bimerr.iot.linkeddata.es/def/occupancy-profile#Thermostat> ;
+        <https://bimerr.iot.linkeddata.es/def/occupancy-profile#hasOperationalMode>
+                <https://bimerr.iot.linkeddata.es/def/occupancy-profile#Adjustable> .
+
+<https://data.bimerr.iot.linkeddata.es/resource/B_TC1-Environment>
+        a       <https://bimerr.iot.linkeddata.es/def/occupancy-profile#Environment> ;
+        <https://bimerr.iot.linkeddata.es/def/occupancy-profile#hasEnvironmentalParameter>
+                <https://data.bimerr.iot.linkeddata.es/resource/B_TC1-Weibull1D-Parameter1ID> .
+
+<https://data.bimerr.iot.linkeddata.es/resource/16Y9ahzJ5DjhmNdLJbEHS9_1wyeFgulzFhhJwSLyhKQk2_31gUPiJjz4Qvpt6sZCOGVk-Thermostat>
+        a       <https://bimerr.iot.linkeddata.es/def/occupancy-profile#Thermostat> ;
+        <https://bimerr.iot.linkeddata.es/def/occupancy-profile#hasOperationalMode>
+                <https://bimerr.iot.linkeddata.es/def/occupancy-profile#Adjustable> .
+
+<https://data.bimerr.iot.linkeddata.es/resource/B_TC2-Weibull1D-CoefficientA>
+        a       <https://bimerr.iot.linkeddata.es/def/occupancy-profile#Coefficient> ;
+        <https://bimerr.iot.linkeddata.es/def/occupancy-profile#coefficientValue>
+                "24.44"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <https://bimerr.iot.linkeddata.es/def/occupancy-profile#name>
+                "CoefficientA"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<https://bimerr.iot.linkeddata.es/def/occupancy-profile#Adjustable>
+        a       <https://bimerr.iot.linkeddata.es/def/occupancy-profile#OperationalModeConcept> .
+
+<https://data.bimerr.iot.linkeddata.es/resource/B_TC2-Environment>
+        a       <https://bimerr.iot.linkeddata.es/def/occupancy-profile#Environment> ;
+        <https://bimerr.iot.linkeddata.es/def/occupancy-profile#hasEnvironmentalParameter>
+                <https://data.bimerr.iot.linkeddata.es/resource/B_TC2-Weibull1D-Parameter1ID> .
+
+<https://data.bimerr.iot.linkeddata.es/resource/B_TC2-Weibull1D-Parameter1ID>
+        a       <https://bimerr.iot.linkeddata.es/def/occupancy-profile#EnvironmentalParameter> ;
+        <https://bimerr.iot.linkeddata.es/def/occupancy-profile#describesProperty>
+                <https://bimerr.iot.linkeddata.es/def/occupancy-profile#Temperature> ;
+        <https://bimerr.iot.linkeddata.es/def/occupancy-profile#name>
+                "Room dry-bulb air temperature"^^<http://www.w3.org/2001/XMLSchema#string> .
