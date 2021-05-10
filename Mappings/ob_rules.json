@@ -5,7 +5,7 @@
       "datasource_ids": [
         "OccupantBehavior Datasource"
       ],
-      "subject": "https://data.bimerr.iot.linkeddata.es/resource/{$.Buildings.Building.BuildingIfcGuid}",
+      "subject": "http://data.bimerr.iot.linkeddata.es/resource/{$.Buildings.Building.BuildingIfcGuid}",
       "properties": [
         {
           "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
@@ -15,13 +15,13 @@
         },
         {
           "predicate": "https://w3id.org/def/saref4bldg#hasSpace",
-          "object": "https://data.bimerr.iot.linkeddata.es/resource/{$.Buildings.Building.Spaces.Space[*].IfcConcatenation}",
+          "object": "http://data.bimerr.iot.linkeddata.es/resource/{$.Buildings.Building.Spaces.Space[*].IfcConcatenation}",
           "is_literal": "False",
           "datatype": ""
         },
         {
           "predicate": "https://bimerr.iot.linkeddata.es/def/building#hasApartment",
-          "object": "https://data.bimerr.iot.linkeddata.es/resource/{$.Buildings.Building.Spaces.Space[*].SpacesID}",
+          "object": "http://data.bimerr.iot.linkeddata.es/resource/{$.Buildings.Building.Spaces.Space[*].SpacesID}",
           "is_literal": "False",
           "datatype": ""
         }
@@ -32,7 +32,7 @@
       "datasource_ids": [
         "OccupantBehavior Spaces"
       ],
-      "subject": "https://data.bimerr.iot.linkeddata.es/resource/{$.IfcConcatenationZone}",
+      "subject": "http://data.bimerr.iot.linkeddata.es/resource/{$.IfcConcatenationZone}",
       "properties": [
         {
           "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
@@ -42,7 +42,7 @@
         },
         {
           "predicate": "https://bimerr.iot.linkeddata.es/def/building#hasSpace",
-          "object": "https://data.bimerr.iot.linkeddata.es/resource/{$.IfcConcatenation}",
+          "object": "http://data.bimerr.iot.linkeddata.es/resource/{$.IfcConcatenation}",
           "is_literal": "False",
           "datatype": ""
         }
@@ -53,7 +53,7 @@
       "datasource_ids": [
         "OccupantBehavior Spaces"
       ],
-      "subject": "https://data.bimerr.iot.linkeddata.es/resource/{$.IfcConcatenation}",
+      "subject": "http://data.bimerr.iot.linkeddata.es/resource/{$.IfcConcatenation}",
       "properties": [
         {
           "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
@@ -63,13 +63,13 @@
         },
         {
           "predicate": "https://bimerr.iot.linkeddata.es/def/building#hasOccupant",
-          "object": "https://data.bimerr.iot.linkeddata.es/resource/{$.OccupantID}",
+          "object": "http://data.bimerr.iot.linkeddata.es/resource/{$.OccupantID}",
           "is_literal": "False",
           "datatype": ""
         },
         {
           "predicate": "https://w3id.org/def/saref4bldg#contains",
-          "object": "https://data.bimerr.iot.linkeddata.es/resource/{$.Systems.System.Concatenation}",
+          "object": "http://data.bimerr.iot.linkeddata.es/resource/{$.Systems.System.Concatenation}",
           "is_literal": "False",
           "datatype": ""
         }
@@ -80,7 +80,7 @@
       "datasource_ids": [
         "OccupantBehavior Spaces"
       ],
-      "subject": "https://data.bimerr.iot.linkeddata.es/resource/{$.Systems.System.Concatenation}",
+      "subject": "http://data.bimerr.iot.linkeddata.es/resource/{$.Systems.System.Concatenation}",
       "properties": [
         {
           "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
@@ -101,7 +101,7 @@
       "datasource_ids": [
         "OccupantBehavior Occupant"
       ],
-      "subject": "https://data.bimerr.iot.linkeddata.es/resource/{$.ID}",
+      "subject": "http://data.bimerr.iot.linkeddata.es/resource/{$.ID}",
       "properties": [
         {
           "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
@@ -111,7 +111,7 @@
         },
         {
           "predicate": "https://bimerr.iot.linkeddata.es/def/occupancy-profile#hasBehavior",
-          "object": "https://data.bimerr.iot.linkeddata.es/resource/{$.BehaviorID}",
+          "object": "http://data.bimerr.iot.linkeddata.es/resource/{$.BehaviorID}",
           "is_literal": "False",
           "datatype": ""
         }
@@ -137,7 +137,7 @@
       "datasource_ids": [
         "OccupantBehavior Behaviors"
       ],
-      "subject": "https://data.bimerr.iot.linkeddata.es/resource/{$.ID}",
+      "subject": "http://data.bimerr.iot.linkeddata.es/resource/{$.ID}",
       "properties": [
         {
           "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
@@ -147,7 +147,7 @@
         },
         {
           "predicate": "https://bimerr.iot.linkeddata.es/def/occupancy-profile#leadsTo",
-          "object": "https://data.bimerr.iot.linkeddata.es/resource/{$.Actions.Interaction.TypeConcat}",
+          "object": "http://data.bimerr.iot.linkeddata.es/resource/{$.Actions.Interaction.TypeConcat}",
           "is_literal": "False",
           "datatype": ""
         }
@@ -158,7 +158,7 @@
       "datasource_ids": [
         "OccupantBehavior Behaviors"
       ],
-      "subject": "https://data.bimerr.iot.linkeddata.es/resource/Interaction-{$.Actions.Interaction.TypeConcat}",
+      "subject": "http://data.bimerr.iot.linkeddata.es/resource/Interaction-{$.Actions.Interaction.TypeConcat}",
       "properties": [
         {
           "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
@@ -168,7 +168,7 @@
         },
         {
           "predicate": "https://bimerr.iot.linkeddata.es/def/occupancy-profile#interactsOver",
-          "object": "https://data.bimerr.iot.linkeddata.es/resource/{$.Concatenation}",
+          "object": "http://data.bimerr.iot.linkeddata.es/resource/{$.Concatenation}",
           "is_literal": "False",
           "datatype": ""
         },
@@ -180,7 +180,7 @@
         },
         {
           "predicate": "https://bimerr.iot.linkeddata.es/def/occupancy-profile#describedByFormula",
-          "object": "https://data.bimerr.iot.linkeddata.es/resource/{$.Actions.Interaction.Formula.ConcatForm}",
+          "object": "http://data.bimerr.iot.linkeddata.es/resource/{$.Actions.Interaction.Formula.ConcatForm}",
           "is_literal": "False",
           "datatype": ""
         },
@@ -197,7 +197,7 @@
       "datasource_ids": [
         "OccupantBehavior Behaviors"
       ],
-      "subject": "https://data.bimerr.iot.linkeddata.es/resource/Interaction-{$.Actions.Interaction.Type}",
+      "subject": "http://data.bimerr.iot.linkeddata.es/resource/Interaction-{$.Actions.Interaction.Type}",
       "properties": [
         {
           "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
@@ -212,7 +212,7 @@
       "datasource_ids": [
         "OccupantBehavior Formula"
       ],
-      "subject": "https://data.bimerr.iot.linkeddata.es/resource/{$.ConcatForm}",
+      "subject": "http://data.bimerr.iot.linkeddata.es/resource/{$.ConcatForm}",
       "properties": [
         {
           "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
@@ -222,13 +222,13 @@
         },
         {
           "predicate": "https://bimerr.iot.linkeddata.es/def/occupancy-profile#hasCoefficient",
-          "object": "https://data.bimerr.iot.linkeddata.es/resource/{$.Coefficients.Coefficient[*].ConcatName}",
+          "object": "http://data.bimerr.iot.linkeddata.es/resource/{$.Coefficients.Coefficient[*].ConcatName}",
           "is_literal": "False",
           "datatype": ""
         },
         {
           "predicate": "https://bimerr.iot.linkeddata.es/def/occupancy-profile#hasIndependentVariable",
-          "object": "https://data.bimerr.iot.linkeddata.es/resource/{$.Coefficients.Parameter.ConcatName}",
+          "object": "http://data.bimerr.iot.linkeddata.es/resource/{$.Coefficients.Parameter.ConcatName}",
           "is_literal": "False",
           "datatype": ""
         }
@@ -239,7 +239,7 @@
       "datasource_ids": [
         "OccupantBehavior Coefficients"
       ],
-      "subject": "https://data.bimerr.iot.linkeddata.es/resource/{$.ConcatName}",
+      "subject": "http://data.bimerr.iot.linkeddata.es/resource/{$.ConcatName}",
       "properties": [
         {
           "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
@@ -266,7 +266,7 @@
       "datasource_ids": [
         "OccupantBehavior Behaviors"
       ],
-      "subject": "https://data.bimerr.iot.linkeddata.es/resource/{$.Actions.Interaction.Formula.Coefficients.Parameter.ConcatName}",
+      "subject": "http://data.bimerr.iot.linkeddata.es/resource/{$.Actions.Interaction.Formula.Coefficients.Parameter.ConcatName}",
       "properties": [
         {
           "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
@@ -308,7 +308,7 @@
       "datasource_ids": [
         "OccupantBehavior Behaviors"
       ],
-      "subject": "https://data.bimerr.iot.linkeddata.es/resource/#{$.Needs.Physical.Type}",
+      "subject": "http://data.bimerr.iot.linkeddata.es/resource/#{$.Needs.Physical.Type}",
       "properties": [
         {
           "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
@@ -318,7 +318,7 @@
         },
         {
           "predicate": "https://bimerr.iot.linkeddata.es/def/occupancy-profile#definedByRange",
-          "object": "https://data.bimerr.iot.linkeddata.es/resource/#{$.Needs.Physical.Type}-ParameterRange",
+          "object": "http://data.bimerr.iot.linkeddata.es/resource/#{$.Needs.Physical.Type}-ParameterRange",
           "is_literal": "False",
           "datatype": ""
         }
@@ -329,7 +329,7 @@
       "datasource_ids": [
         "OccupantBehavior Behaviors"
       ],
-      "subject": "https://data.bimerr.iot.linkeddata.es/resource/#{$.Needs.Physical.Type}-ParameterRange",
+      "subject": "http://data.bimerr.iot.linkeddata.es/resource/#{$.Needs.Physical.Type}-ParameterRange",
       "properties": [
         {
           "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
@@ -356,7 +356,7 @@
       "datasource_ids": [
         "OccupantBehavior Behaviors"
       ],
-      "subject": "https://data.bimerr.iot.linkeddata.es/resource/{$.ID}-DriverSet",
+      "subject": "http://data.bimerr.iot.linkeddata.es/resource/{$.ID}-DriverSet",
       "properties": [
         {
           "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
@@ -366,7 +366,7 @@
         },
         {
           "predicate": "https://bimerr.iot.linkeddata.es/def/occupancy-profile#composedOf",
-          "object": "https://data.bimerr.iot.linkeddata.es/resource/{$.ID}-Environment",
+          "object": "http://data.bimerr.iot.linkeddata.es/resource/{$.ID}-Environment",
           "is_literal": "False",
           "datatype": ""
         }
@@ -377,7 +377,7 @@
       "datasource_ids": [
         "OccupantBehavior Behaviors"
       ],
-      "subject": "https://data.bimerr.iot.linkeddata.es/resource/{$.ID}-Environment",
+      "subject": "http://data.bimerr.iot.linkeddata.es/resource/{$.ID}-Environment",
       "properties": [
         {
           "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
@@ -387,7 +387,7 @@
         },
         {
           "predicate": "https://bimerr.iot.linkeddata.es/def/occupancy-profile#hasEnvironmentalParameter",
-          "object": "https://data.bimerr.iot.linkeddata.es/resource/{$.Actions.Interaction.Formula.Coefficients.Parameter.ConcatName}",
+          "object": "http://data.bimerr.iot.linkeddata.es/resource/{$.Actions.Interaction.Formula.Coefficients.Parameter.ConcatName}",
           "is_literal": "False",
           "datatype": ""
         }
